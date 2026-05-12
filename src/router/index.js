@@ -1,32 +1,31 @@
-import { createRouter, createWebHistory } from 'vue-router'
-
-import HomeView from '../views/HomeView.vue'
-import DetailView from '../views/DetailView.vue'
-import CategoryView from '../views/CategoryView.vue'
+import { createRouter, createWebHashHistory } from 'vue-router';
+import HomeView from '../views/HomeView.vue';
+import DetailView from '../views/DetailView.vue';
+import CategoryView from '../views/CategoryView.vue';
 
 const routes = [
   {
     path: '/',
     name: 'home',
-    component: HomeView
+    component: HomeView,
   },
 
   {
     path: '/category/:category',
     name: 'category',
-    component: CategoryView
+    component: CategoryView,
   },
 
   {
     path: '/detail/:title',
     name: 'detail',
-    component: DetailView
-  }
-]
+    component: DetailView,
+  },
+];
 
 const router = createRouter({
-  history: createWebHistory(),
-  routes
-})
+  history: createWebHashHistory(),
+  routes,
+});
 
-export default router
+export default router;
