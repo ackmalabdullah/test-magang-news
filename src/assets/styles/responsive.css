@@ -1,0 +1,29 @@
+/* Responsive Design */
+
+/* Mobile */
+@media (max-width: 576px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 577px) and (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 769px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* Large Desktop */
+@media (min-width: 1200px) {
+  body {
+    font-size: 16px;
+  }
+}
